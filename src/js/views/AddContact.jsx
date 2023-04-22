@@ -45,14 +45,14 @@ const AddContact = () => {
             className="form-control"
             placeholder="Full Name"
           />
-          <label for="email">Email</label>
+          <label for="address">Address</label>
           <input
-            type="email"
-            name="email"
-            value={contact.email}
+            type="address"
+            name="address"
+            value={contact.address}
             onChange={(event) => handleChange(event)}
             className="form-control"
-            placeholder="Enter Email"
+            placeholder="Enter address"
           />
           <label for="phone">Phone</label>
           <input
@@ -63,14 +63,14 @@ const AddContact = () => {
             className="form-control"
             placeholder="Enter phone"
           />
-          <label for="address">Address</label>
+          <label for="email">Email</label>
           <input
-            type="address"
-            name="address"
-            value={contact.address}
+            type="email"
+            name="email"
+            value={contact.email}
             onChange={(event) => handleChange(event)}
             className="form-control"
-            placeholder="Enter address"
+            placeholder="Enter Email"
           />
         </div>
         <button

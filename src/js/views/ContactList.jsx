@@ -41,16 +41,16 @@ const editFromContactList = (index) => {
           <div className="card w-75 m-auto my-5 d-flex flex-row">
             <div className="m-4">
               <img
-                src="https://picsum.photos/250"
+                src="https://picsum.photos/220"
                 className="rounded-circle"
                 alt="..."
               />
             </div>
             <div className="align-self-center m-4">
-              <p>Name: {contact.fullname}</p>
-              <p>Email: {contact.email}</p>
-              <p>Phone: {contact.phone}</p>
-              <p>Address: {contact.address}</p>
+              <p className="fs-5">{contact.fullname}</p>
+              <div className="d-flex gap-2"><i class="fas fa-map-marker-alt"></i><p>{contact.address}</p></div>
+              <div className="d-flex gap-2"><i class="fas fa-phone"></i><p>{contact.phone}</p></div>
+              <div className="d-flex gap-2"><i class="fas fa-envelope"></i><p>{contact.email}</p></div>
             </div>
             <div className="d-flex ms-auto p-4">
               <div className="m-3">
